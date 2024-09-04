@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/10000hours.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1만 시간의 법칙</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1 class="sr-only">1만 시간의 법칙</h1>
+        <img class="title" src="./img/title.png" alt="1만 시간의 법칙" />
+      </header>
+      <main>
+        <h2 class="sr-only">메인 페이지</h2>
+        <div class="container container1">
+          <p class="quote1">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+          <p class="quote2">
+            <span><strong class="strong">1만 시간의 법칙</strong>은</span>
+            <br />
+            <span>어떤 분야의 전문가가 되기 위해서는</span><br />
+            <span>최소 1만 시간의 훈련이 필요하다는 법칙이다.</span>
+          </p>
+        </div>
+
+        <div class="container container2">
+          <div class="input">
+            <h2 class="sr-only">분야 및 훈련 기간 입력하기</h2>
+            <p>
+              <span>
+                나는
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="예)프로그래밍"
+                  id="what"
+                />
+                전문가가 될 것이다.
+              </span>
+              <br />
+              <span>
+                그래서 앞으로 매일 하루에
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="예)5시간"
+                  id="time"
+                />
+                시간씩 훈련할 것이다.
+              </span>
+            </p>
+            <br />
+          </div>
+        </div>
+
+        <div class="container output">
+          <button id="btn-result">
+            <span> 나는 며칠 동안 훈련을 해야</span>
+            <span>1만 시간이 될까?</span>
+          </button>
+          <h2 class="sr-only">나의 훈련기간 결과 출력</h2>
+          <p>
+            <span>
+              당신은 <strong id="output1"></strong> 전문가가 되기 위해서
+            </span>
+            <br />
+            <span>
+              대략 <strong id="output2"></strong>일 이상 훈련하셔야 합니다.
+            </span>
+            <script>
+              const inputText1 = document.querySelector("#what");
+              const inputText2 = document.querySelector("#time");
+              const button = document.querySelector("#btn-result");
+              const output1 = document.querySelector("#output1");
+              const output2 = document.querySelector("#output2");
+
+              button.addEventListener("click", function () {
+                output1.innerHTML = inputText1.value;
+                output2.innerHTML = parseInt(10000 / inputText2.value);
+              });
+            </script>
+          </p>
+        </div>
+        <div class="container btn-group">
+          <button class="go">훈련하러 가기 GO!GO!</button>
+          <button class="share">공유하기</button>
+        </div>
+      </main>
+      <footer>
+        <h3 class="sr-only">페이지 끝</h3>
+        <img src="./img/logo.png" alt="주식회사 위니브" />
+        <p class="end-of-page">
+          <span>
+            ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에
+            있습니다.
+          </span>
+          <br />
+          <span>
+            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+          </span>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

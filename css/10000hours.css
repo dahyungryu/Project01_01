@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+      format("opentype");
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:root {
+  --main-font: "GmarketSansMedium";
+  --bold-font: "GmarketSansBold";
+  --button-color: rgba(252, 238, 33, 1);
+  --btn-text: rgba(91, 35, 134, 1);
+  --btn-padding: 2.1rem 4.9rem;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  background: rgba(91, 35, 134, 1);
+  font-family: var(--main-font);
+  font-size: 2.4rem;
+  text-align: center;
+  color: #fff;
+}
+strong {
+  font-family: var(--bold-font);
+}
+.wrap {
+  width: 192rem;
+  max-width: calc(100% - 6rem);
+  display: flex;
+  margin: 10rem auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  width: auto;
+  height: 22.5rem;
+  background: url(../img/clock.png) no-repeat 50% 50% / contain;
+}
+
+.title {
+  width: 56.4rem;
+  object-fit: contain;
+  position: relative;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.container1 {
+  height: 20rem;
+  align-self: center;
+}
+.container .quote1 {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 2.2rem;
+  line-height: 3.96rem;
+  color: #f5df4d;
+}
+
+.container1 .quote2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  background: url(../img/quotes.png) no-repeat 50% 50% / 49.3rem;
+}
+
+.quote2 .strong {
+  font-size: 2.4rem;
+}
+
+.container2 p {
+  line-height: 8rem;
+}
+
+input {
+  font-size: 2.4rem;
+  font-family: var(--main-font);
+  width: 22.8rem;
+  height: 5.7rem;
+  top: 81.5rem;
+  left: 76.7rem;
+  gap: 0px;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+
+button {
+  font-size: 2.4rem;
+  padding: var(--btn-padding);
+  border-radius: 5.6rem;
+  font-family: var(--bold-font);
+  color: var(--btn-text);
+  background-color: var(--button-color);
+}
+
+#output1,
+#output2 {
+  font-size: 7.2rem;
+}
+
+.output p {
+  line-height: 7.2rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.share {
+  background-color: #fff;
+}
+
+footer {
+   margin-top: 10rem;
+}
+
+footer img {
+  width: 12.5rem;
+}
+
+.end-of-page {
+  font-size: 1.2rem;
+  font-family: "Noto Sans KR";
+  line-height: 1.738rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+  .wrap {
+    width: auto;
+  }
+  .button1 {
+    padding: 4.6rem 9.8rem 4.2rem 9.8rem;
+    border-radius: 2.6rem;
+    opacity: 0px;
+  }
+}
