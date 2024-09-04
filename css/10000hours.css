@@ -49,6 +49,11 @@
 :root {
   --main-font: "GmarketSansMedium";
   --bold-font: "GmarketSansBold";
+  --main-font-size: 2.4rem;
+  --sub-font-size-1: 3.6rem;
+  --sub-font-size-2: 1.8rem;
+  --footer-font-size: 1.2rem;
+  --output-font-size: 7.2rem;
   --button-color: rgba(252, 238, 33, 1);
   --btn-text: rgba(91, 35, 134, 1);
   --btn-padding: 2.1rem 4.9rem;
@@ -60,7 +65,7 @@ html {
 body {
   background: rgba(91, 35, 134, 1);
   font-family: var(--main-font);
-  font-size: 2.4rem;
+  font-size: var(--main-font-size);
   text-align: center;
   color: #fff;
 }
@@ -105,19 +110,19 @@ header {
 }
 .container .quote1 {
   font-family: "OTEnjoystoriesBA";
-  font-size: 2.2rem;
+  font-size: var(--sub-font-size-1);
   line-height: 3.96rem;
   color: #f5df4d;
 }
 
 .container1 .quote2 {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  font-size: var(--sub-font-size-2);
+  line-height: 3.6rem;
   background: url(../img/quotes.png) no-repeat 50% 50% / 49.3rem;
 }
 
 .quote2 .strong {
-  font-size: 2.4rem;
+  font-size: var(--main-font-size);
 }
 
 .container2 p {
@@ -125,7 +130,7 @@ header {
 }
 
 input {
-  font-size: 2.4rem;
+  font-size: var(--main-font-size);
   font-family: var(--main-font);
   width: 22.8rem;
   height: 5.7rem;
@@ -137,7 +142,7 @@ input {
 }
 
 button {
-  font-size: 2.4rem;
+  font-size: var(--main-font-size);
   padding: var(--btn-padding);
   border-radius: 5.6rem;
   font-family: var(--bold-font);
@@ -147,7 +152,7 @@ button {
 
 #output1,
 #output2 {
-  font-size: 7.2rem;
+  font-size: var(--output-font-size) rem;
 }
 
 .output p {
@@ -167,7 +172,7 @@ button {
 }
 
 footer {
-   margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 footer img {
@@ -175,22 +180,39 @@ footer img {
 }
 
 .end-of-page {
-  font-size: 1.2rem;
+  font-size: var(--footer-font-size);
   font-family: "Noto Sans KR";
   line-height: 1.738rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
-  html {
-    font-size: 5px;
+  :root {
+    --main-font-size: 1.4rem;
+    --sub-font-size-1: 2.2rem;
+    --sub-font-size-2: 1.4rem;
+    --footer-font-size: 0.9rem;
+    --output-font-size: 2.4rem;
+  }
+  header {
+    height: 12.6rem;
+  }
+  .title {
+    width: 26.7rem;
   }
   .wrap {
     width: auto;
   }
-  .button1 {
-    padding: 4.6rem 9.8rem 4.2rem 9.8rem;
-    border-radius: 2.6rem;
-    opacity: 0px;
+  #button-result {
+    height: 6.8rem;
+    width: 24.1rem;
+    border-radius: 1.3rem;
+  }
+  input {
+    width: 15.6rem;
+    height: 3.7rem;
+  }
+  footer img {
+    width: 9.1rem;
   }
 }
