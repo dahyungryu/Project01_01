@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+}
+:root {
+  --header-font-size: 9.6rem;
+  --main-font-size: 3.6rem;
+  --btn-font-size: 2.4rem;
+  --font-color: rgba(91, 35, 134, 1);
+  --btn-padding: 2.1rem, 4.9rem;
+  --img-width: 43.3rem;
+}
+
+.modal {
+  box-sizing: border-box;
+  width: 80rem;
+  height: 80rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 10rem;
+  color: rgba(91, 35, 134, 1);
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--header-font-size);
+  margin-top: 7.6rem;
+}
+
+p {
+  position: relative;
+  font-size: var(--main-font-size);
+  margin-top: 1rem;
+}
+
+.title {
+  font-family: "OTEnjoystoriesBA";
+}
+
+img {
+  width: var(--img-width);
+  padding: 4px 1.04px 0px 2px;
+  margin-top: 2rem;
+}
+
+button {
+  width: 50.8rem;
+  height: 6.6rem;
+  padding: var(--btn-padding);
+  font-family: "GmarketSansBold";
+  font-size: var(--btn-font-size);
+  color: rgba(91, 35, 134, 1);
+  background-color: rgba(252, 238, 33, 1);
+  border-radius: 5.6rem;
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    br.linebreak {
+        display: none;
+    }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+  :root {
+    --header-font-size: 12.8rem;
+    --main-font-size: 7.2rem;
+    --btn-font-size: 2.8rem;
+    --font-color: rgba(91, 35, 134, 1);
+    --btn-padding: 4.6rem, 9.8rem 4.2rem 9.8rem;
+    --img-width: 43.3rem;
+  }
+  h2 {
+    width: 30.6rem;
+    height: 14rem;
+    overflow: hidden;
+  }
+  img {
+    width: 48.2rem;
+    
+  }
+  .modal {
+    width: 66rem;
+    height: 100rem;
+  }
+  button {
+    width: 48.2rem;
+    height: 13.6rem;
+    border-radius: 2.6rem;
+    padding: var(--btn-padding);
+  }
+
+}
